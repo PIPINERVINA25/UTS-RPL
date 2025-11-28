@@ -1,0 +1,15 @@
+
+Activity dimulai ketika User melakukan login.
+Sistem memverifikasi kredensial.
+Jika valid, User masuk ke dashboard.
+User memilih menu “Peminjaman Buku”.
+Sistem menampilkan daftar buku.
+User memilih buku yang tersedia.
+Sistem mengecek stok buku:
+   - Jika stok tersedia → lanjut proses.
+   - Jika stok habis → tampilkan pesan gagal.
+User menekan tombol “Pinjam Buku”.
+Sistem mencatat transaksi peminjaman.
+Sistem mengurangi stok buku.
+Sistem menampilkan notifikasi “Peminjaman Berhasil”.
+Aktivitas berakhir.

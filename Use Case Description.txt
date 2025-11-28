@@ -1,0 +1,26 @@
+Use Case Name: Peminjaman Buku
+Actor: User
+Deskripsi: Proses peminjaman buku secara digital pada sistem perpustakaan.
+
+Precondition:
+- User sudah login.
+- Buku tersedia.
+
+Postcondition:
+- Transaksi peminjaman tercatat.
+- Stok buku berkurang.
+
+Main Flow:
+1. User memilih buku.
+2. Sistem menampilkan detail buku.
+3. User menekan tombol “Pinjam”.
+4. Sistem mengecek stok.
+5. Sistem mencatat peminjaman.
+6. Sistem menampilkan pesan “Berhasil”.
+
+Alternative Flow:
+A1: Stok kosong
+    - Sistem menampilkan pesan gagal.
+
+A2: User belum login
+    - Sistem meminta login terlebih dahulu.

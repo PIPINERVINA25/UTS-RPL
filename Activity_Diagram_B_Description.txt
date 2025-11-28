@@ -1,0 +1,10 @@
+Activity Diagram B - Deskripsi (Alternatif & Reservasi)
+
+Langkah:
+1. User login; jika tidak valid maka diarahkan ke login.
+2. User mencari buku dan memilih item.
+3. User mengklik 'Pinjam'.
+4. Sistem memeriksa ketersediaan:
+   - Jika tersedia -> buat peminjaman, update inventory, kirim notifikasi, selesai.
+   - Jika tidak tersedia -> tawarkan reservasi. Jika user setuju -> simpan reservasi, kirim notifikasi, selesai.
+5. Sistem juga memeriksa batas peminjaman user; jika melebihi -> tolak permintaan.

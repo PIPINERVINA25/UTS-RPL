@@ -1,0 +1,25 @@
+Use Case: Peminjaman Buku
+Actors: Member (Mahasiswa/Dosen), Admin
+Goal: Memungkinkan anggota meminjam buku yang tersedia.
+Preconditions:
+- Anggota terdaftar dan login.
+- Anggota belum melebihi batas pinjaman.
+Main Flow:
+1. Anggota login ke sistem.
+2. Anggota mencari dan memilih buku.
+3. Anggota menekan tombol 'Pinjam'.
+4. Sistem mengecek ketersediaan dan syarat anggota.
+5. Jika valid, sistem membuat catatan peminjaman dengan due date.
+6. Sistem mengurangi stok dan mengirim notifikasi.
+7. Use case selesai (Peminjaman Berhasil).
+Alternative Flows:
+A1: Buku Tidak Tersedia:
+ - Sistem menawarkan opsi reservasi.
+ - Anggota dapat memilih reservasi; sistem menyimpan reservasi.
+A2: Anggota Melebihi Batas:
+ - Sistem menolak peminjaman dan menampilkan pesan.
+Exceptions:
+- Koneksi DB gagal -> tampilkan pesan error, batalkan proses.
+Postconditions:
+- Transaksi tercatat di DB.
+- Stok buku diperbarui.

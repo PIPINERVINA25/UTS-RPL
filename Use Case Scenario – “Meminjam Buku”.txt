@@ -1,0 +1,14 @@
+Nama: Meminjam Buku
+Aktor: User (Mahasiswa)
+
+Alur Normal:
+1. User masuk ke sistem menggunakan username & password.
+2. User memilih menu “Daftar Buku”.
+3. User memilih buku yang ingin dipinjam.
+4. User menekan tombol “Pinjam”.
+5. Sistem mengecek ketersediaan buku.
+6. Jika tersedia, sistem mencatat transaksi peminjaman.
+7. Sistem menampilkan pesan “Peminjaman berhasil”.
+
+Alur Alternatif:
+- Jika buku tidak tersedia → sistem menampilkan pesan “Stok habis”.

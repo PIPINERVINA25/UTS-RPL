@@ -1,0 +1,18 @@
+Actor: User
+Object: UI, Controller, Database, Notifikasi
+
+1. User membuka halaman login.
+2. UI mengirim data ke Controller.
+3. Controller meminta validasi ke Database.
+4. Database mengirim hasil validasi.
+5. UI menampilkan halaman dashboard.
+6. User memilih “Peminjaman Buku”.
+7. UI meminta data buku ke Controller.
+8. Controller mengambil data dari Database.
+9. UI menampilkan daftar buku.
+10. User klik tombol “Pinjam”.
+11. Controller mengecek stok ke Database.
+12. Database mengirim hasil stok.
+13. Jika tersedia → Controller simpan data peminjaman.
+14. Database menyimpan transaksi.
+15. UI menampilkan notifikasi sukses.

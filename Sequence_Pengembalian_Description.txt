@@ -1,0 +1,10 @@
+Sequence Diagram - Pengembalian Buku (Deskripsi)
+
+Flow:
+1. Member memulai pengembalian melalui UI (masukkan ID peminjaman).
+2. UI mengirim request ke Controller.
+3. Controller memanggil LoanService untuk memvalidasi dan memproses pengembalian.
+4. LoanService memperbarui status peminjaman di database.
+5. LoanService memanggil InventoryService untuk menambah jumlah available book.
+6. NotificationService mengirim konfirmasi pengembalian ke member.
+7. UI menampilkan pesan sukses kepada member.

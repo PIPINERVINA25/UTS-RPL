@@ -1,0 +1,15 @@
+Design Patterns (Creational) - Penerapan pada BookSphere
+
+1. Factory Method:
+ - Gunakan BookFactory.create(type, data) untuk membuat Book/EBook/Journal.
+
+2. Builder:
+ - BookBuilder().withTitle().withAuthors().withPublisher().build() untuk objek kompleks.
+
+3. Singleton:
+ - DatabaseConnection singleton untuk mengatur koneksi DB (atau gunakan service container framework).
+
+Contoh Pseudocode:
+class BookFactory {
+  static Book create(type, data) { ... }
+}

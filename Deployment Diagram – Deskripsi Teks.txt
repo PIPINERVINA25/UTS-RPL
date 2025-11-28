@@ -1,0 +1,16 @@
+Node 1: Client (Laptop/HP User)
+   - Browser
+   - Internet Connection
+
+Node 2: Web Server
+   - Laravel Framework
+   - Authentication Module
+   - Borrowing Module
+   - Book Management Module
+
+Node 3: Database Server
+   - MySQL / MariaDB
+   - Tabel Users, Books, Borrowings
+
+Komunikasi:
+Client → HTTP/HTTPS → Web Server → Query SQL → Database Server

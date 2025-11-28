@@ -1,0 +1,16 @@
+Prinsip SOLID - Penjelasan Singkat dan Penerapan pada BookSphere
+
+S - Single Responsibility Principle:
+ - Setiap kelas bertanggung jawab hanya pada satu aspek (contoh: LoanService hanya mengatur logika peminjaman).
+
+O - Open/Closed Principle:
+ - Modul dapat diperluas tanpa merubah kode existing (contoh: menambah tipe buku baru lewat Factory).
+
+L - Liskov Substitution Principle:
+ - Subclass (EBook/Journal) dapat menggantikan Book tanpa merusak sistem.
+
+I - Interface Segregation Principle:
+ - Pisahkan interface untuk operasi berbeda (contoh: ILoanRepository, IBookRepository).
+
+D - Dependency Inversion Principle:
+ - High-level modules tidak bergantung pada low-level modules; gunakan abstractions (interface) dan DI.

@@ -1,0 +1,31 @@
+Class User {
+   id
+   name
+   email
+   password
+   +login()
+   +logout()
+}
+
+Class Book {
+   id
+   title
+   author
+   year
+   stock
+   +getDetail()
+}
+
+Class Borrowing {
+   id
+   user_id
+   book_id
+   borrow_date
+   return_date
+   +borrow()
+   +return()
+}
+
+Relasi:
+User 1..* → Borrowing
+Book 1..* → Borrowing
